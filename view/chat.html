@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kwick - chat</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,900,700italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div id class="col-md-9 zoomIn animated">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Chat - Kwick's channel
+                        <div class="btn-group pull-right">
+                            <button id="logout" type="button" class="btn btn-logout btn-xs ">déconnexion</button>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="chat" id="chat">
+                            <li class="left clearfix">
+                                <div class="chat-body clearfix">
+
+                                    <div id="chatmessage">
+
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="input-group">
+                            <input id="messagesend" type="text" class="form-control input-sm" placeholder="Votre message" />
+                            <span class="input-group-btn">
+                            <button class="btn btn-send btn-sm" id="messagebtn">
+                                Send</button>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 zoomIn animated">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Liste des utilisateurs connectés
+                    </div>
+                </div>
+                <ul class="chat panel-co">
+                    <li class="left clearfix">
+                        <div class="chat-body clearfix">
+                            <div class="header">
+                                <div id="membreco"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- old col -->
+        </div>
+    </div>
+    <!-- 
+ SCRIPTS  -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+     <script src="../bower_components/jquery-dateFormat/dist/jquery-dateFormat.min.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
